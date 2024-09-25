@@ -15,9 +15,9 @@ public class Main {
 		
 		Scanner scanner = new Scanner(System.in);
 		int[] RandomNumbers_LinkedList = First.GenerateRandom_LinkedList( 6 , 1 , 38 );
-		int[] RandomNumbers_HashSet = Second.GenerateRandom_HashSet( 1 , 1 , 8 );
+		int[] RandomNumbers_HashSet = Second.GenerateRandom_HashSet( 3 , 1 , 8 );
 		int[] First_Number = new int[6];
-		int[] Second_Number = new int[1];
+		int[] Second_Number = new int[3];
 		
 		System.out.println("產生一區號碼)");
 		PrintArray(RandomNumbers_LinkedList);
@@ -32,7 +32,7 @@ public class Main {
 		
 		System.out.println("請輸入第二區號碼:");
 		System.out.print("->");
-		for( int i = 0 ; i < 1 ; i++ ) {
+		for( int i = 0 ; i < 3 ; i++ ) {
 			Second_Number[i] = scanner.nextInt();
 		}
 		
