@@ -59,7 +59,7 @@ public class Button{
             if (timer != null && timer.isRunning()) {
                 timer.stop(); 
             }
-            timer = new Timer(300, event->resetButton());
+            timer = new Timer(30000, event->resetButton());
             timer.setRepeats(false); 
             timer.start();
         });
